@@ -104,6 +104,36 @@ body {
     width: 100%;
   }
 }
+  input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: lightblue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
 </style>
 </head>
 <body>
@@ -113,15 +143,34 @@ body {
   <a href="Contact.html">Contact</a>
   <a href="Services.html">Services</a>
   <a href="index.html">Home</a>
+  <a href="Login.html">Login</a>
+  <a href="Donate.html">Donate</a>
 </div>
 
 <div class="row">
   <div class="leftcolumn">
 
 
-<h2>Services</h2>
-      
-      <p>If you would like to donate or have us pick up any technonology that you would like to give us please use the number on the help page to get in contact with RecTech.</p>
-    </div>
-    <div class="card">
-      
+<h3>Donate Today!<h3>
+
+<div>
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Amount</label>
+    <select id="country" name="country">
+      <option value="$25.00">$25.00</option>
+      <option value="$10.00">$10.00</option>
+      <option value="$5.00">$5.00</option>
+    </select>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
